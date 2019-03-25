@@ -1,13 +1,12 @@
 /*
-    .waterfall ´ËÔªËØÉùÃ÷ÆÙ²¼Á÷ÈİÆ÷ÔªËØ
-        .waterfall .waterfall-data[data-waterfall-index] ´ËÔªËØÓÃÀ´Ê¢·Å³õÊ¼Êı¾İÔªËØ£¬data-waterfall-indexÊôĞÔÓÃÒÔ±íÃ÷ÔªËØË³Ğò
-        .waterfall .waterfall-item ´ËÔªËØÊÇÊı¾İÔªËØ
-        .waterfall .waterfall-row ´ËÔªËØÓÃÀ´Ê¢·ÅÆÙ²¼Á÷ÁĞ
-        .waterfall.waterfall - row.waterfall - column ´ËÔªËØÊÇÆÙ²¼Á÷ÁĞ£¬ÓÃÒÔÔÚÆÁÄ»ÉÏÏÔÊ¾Êı¾İÔªËØ£¬µ±Ò³ÃæÔØÈëºó¼°´°¿Ú´óĞ¡¸Ä±äÊ±£¬Êı¾İÔªËØ½«°´ÕÕË³Ğò·ÅÔÚ¸ß¶È×îĞ¡µÄÒ»ÁĞÖĞ¡£Ã»ÓĞwaterfall - columnÀàµÄÔªËØ½«±»ºöÂÔ
+    .waterfall æ­¤å…ƒç´ å£°æ˜ç€‘å¸ƒæµå®¹å™¨å…ƒç´ 
+        .waterfall .waterfall-data[data-waterfall-index] æ­¤å…ƒç´ ç”¨æ¥ç››æ”¾åˆå§‹æ•°æ®å…ƒç´ ï¼Œdata-waterfall-indexå±æ€§ç”¨ä»¥è¡¨æ˜å…ƒç´ é¡ºåº
+        .waterfall .waterfall-item æ­¤å…ƒç´ æ˜¯æ•°æ®å…ƒç´ 
+        .waterfall .waterfall-row æ­¤å…ƒç´ ç”¨æ¥ç››æ”¾ç€‘å¸ƒæµåˆ—
+        .waterfall.waterfall - row.waterfall - column æ­¤å…ƒç´ æ˜¯ç€‘å¸ƒæµåˆ—ï¼Œç”¨ä»¥åœ¨å±å¹•ä¸Šæ˜¾ç¤ºæ•°æ®å…ƒç´ ï¼Œå½“é¡µé¢è½½å…¥ååŠçª—å£å¤§å°æ”¹å˜æ—¶ï¼Œæ•°æ®å…ƒç´ å°†æŒ‰ç…§é¡ºåºæ”¾åœ¨é«˜åº¦æœ€å°çš„ä¸€åˆ—ä¸­ã€‚æ²¡æœ‰waterfall - columnç±»çš„å…ƒç´ å°†è¢«å¿½ç•¥
 */
 
 $(function () {
-
     (window.onresize = window.waterfall = function () {
         var data = $('.waterfall .waterfall-data');
         var columns = $('.waterfall .waterfall-row .waterfall-column');
@@ -43,7 +42,5 @@ $(function () {
         for (var i = 0; i < items.length; i++) {
             getMinHeightColumn().append(items[i]);
         }
-
     })();
-
 });
